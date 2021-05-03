@@ -31,10 +31,42 @@
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+      <style>
+              .loader {
+                border: 51x solid #fff;
+    border-top: 5px solid #26FFE6;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 25%;
+    right: 50%;
+ }
+.bg-loader{
+        width: 100%;
+    position: relative;
+    min-height: 1000px;
+    background: var(--color-blue);
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.hide-loader{
+display:none;
+}
+      </style>
 </head>
 
 <body>
-
+     <div class="bg-loader" id="loader">
+        <div class="loader" >
+                 
+        </div>
+     </div>
 <!--=============================================================================
 ==============================  Start Home page==================================
 =================================================================================-->
@@ -1219,5 +1251,9 @@
 <script src="js/main.js"></script>
 <script src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+<script>
+             $('#loader').addClass("hide-loader");
+
+</script>
 </body>
 </html>
