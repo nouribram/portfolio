@@ -169,7 +169,7 @@ header .logo {
     position: relative;
 }
 header .logo img {
-    width: 25%;
+    width: 40%;
 }
 
 .row{
@@ -269,7 +269,7 @@ nav{
 /* ******* main content ********** */
 .Home-content{
     margin-bottom: 100px !important;
-    margin: 1.5rem auto;
+    margin: 0 auto;
 }
 .Home-content .home-text-content{
     position: relative;
@@ -311,6 +311,9 @@ nav{
 .Home-content .home-text-content  a:hover{
     text-decoration: none;
     color: var(--color-white);
+}
+.Home-content .home-social-icon {
+    margin-top: -30px;
 }
 .Home-content .work-button ul li {
     width: 50px;
@@ -548,7 +551,7 @@ nav{
 .Portfolio {
     position: relative;
     margin: 10px;
-    border: 2px solid black;
+    /*border: 2px solid black;*/
     float: left;
     width: 30%;
     transition-duration: 0.4s;
@@ -599,8 +602,9 @@ nav{
     padding: 15px 50px; 
     font-size:16px; 
     color:rgb(248, 220, 234); 
-    background: #000;
-    transition-duration: 0.4s;
+    background: transparent;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 50%);
+   transition-duration: 0.4s;
 }
 .portfolio .nav a:hover { 
     background:#333; 
@@ -608,6 +612,17 @@ nav{
 .portfolio .nav .active { 
     background-image:var(--gradient) !important;
     color:#fff;
+}
+.portfolio .desc .btn{
+    font-size: 17px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border: 2px solid #fff;
+    padding: 10px 30px;
+}
+.portfolio .desc .btn:hover{
+    background: var(--gradient);
+
 }
 
 @keyframes winanim {
@@ -761,6 +776,8 @@ nav{
     transition: all 0.3s ease-in-out;
 }
 #customers-testimonials .owl-item.active.center .item {
+    width: 25rem;
+   
     opacity: 1;
     -webkit-transform: scale3d(1.0, 1.0, 1);
     transform: scale3d(1.0, 1.0, 1);
@@ -787,6 +804,23 @@ nav{
     transition: all 250ms ease-out 0s;
     width: 20px;
 }
+.owl-carousel .owl-dot{
+    border: 1px solid #E83067;
+    background: #E83067;
+    width: 10px;
+    height: 10px !important;
+    box-shadow: 1px 1px 1px #090a21;
+    height: 10px;
+    border-radius: 100%;
+    margin: 20px 20px;
+}
+.owl-carousel .owl-dots{
+
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: -130px;
+}
+
 
 .testimonial  {
     background: #090A21;
@@ -818,25 +852,7 @@ nav{
 .testimonial-slider{
     width: 100%;
 }
-/*
-.carousel-indicators {
-    background: #000;
-}
-.carousel-indicators .active{
-    background: red;
-}
-.carousel-control-next{
-    background: red;
-}
-.carousel-control-prev{
-    background: red;
-}*/
-/* ======================   Blog =============== */
-.blog  {
-    background: #090A21;
-    color: var(--color-white);
-    min-height: var(--min-height);
-}
+
 /* ======================   contact =============== */
 .contact .form-control{
     background: var(--color-blue);
@@ -848,12 +864,7 @@ nav{
     box-shadow: var(--box-shadow);
     margin: 20px;
     padding: 30px;
-  /* 
-       border-top-right-radius: 15px;
-    border-bottom-right-radius: 50px;
-  border-image-slice: 1;
-    border-width: 5px;
-    border-image-source: var(--gradient);*/
+
 
 }
 .contact .btn-primary{
@@ -1244,3 +1255,5 @@ footer .copy-right{
 @media (max-width: 1399.98px) {  }
 
 /*XX-Large devices (larger desktops)*/
+
+/* loader*/
