@@ -1281,6 +1281,7 @@ footer .copy-right{
     }   
     .main-title{ 
         font-size: 2rem !important;
+        margin: 0px 0px 50px 0px;
     }
     .main-title::after{
         height: 3px;
@@ -1324,8 +1325,61 @@ footer .copy-right{
   .about-feature{
       padding: 0px;
   }
+  .about{
+      margin: 0px auto;
+  }
+
+  .skills .hard-skills li h5, .skills .soft-skills li h5{
+      font-size: 15px;
+  }
+  .skills .hard-skills li h6, .skills .soft-skills li h6{
+      font-size: 20px;
+  }
+  .icon-gradient{
+      font-size: 30px;
+  }
+  .about .why-me ul li .feature-text h4{
+      font-size: 15px !important;
+  }
+  .about .why-me ul li .feature-text p{
+      font-size: 10px;
+  }
+  .about .why-me ul li {
+    padding: 30px 35px;
+    margin: 10px 0px;
+}
+.services .services-box .services-title h6{
+    font-size: 20px;
+}
+.services .services-box ul li p{
+    font-size: 15px;
+}
+.services .process-box ul li img{
+    width:  50%;
+}
+.services .process-box ul li span{
+    left: 60px;
+    top: -10px;
+}
+.services .process-box ul li{
+    font-size: 20px;
+}
+footer .footer-social-icon li img{
+    width: 50% !important;
+}
+footer .footer-social-icon li{
+    width: 50px !important;
+    height: 50px !important;
+}
+footer .copy-right{
+    font-size: 12px !important;
+}
+footer .footer-title {
+    font-size: 40px;
+    margin: 20px 0px;
+}
+.contact .contact-info ul li h5{
+    font-size: 1rem;
+}
+
  }
-
-/*XX-Large devices (larger desktops)*/
-
-/* loader*/
