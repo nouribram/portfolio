@@ -444,8 +444,8 @@ nav{
        
 }
 .about .nav-pills .nav-link{
-    background: transparent;
-	border:none;
+    background: transparent !important;
+    border:none !important;
     color: #fff;
     box-shadow: var(--box-shadow);
     margin: 20px 0px;
